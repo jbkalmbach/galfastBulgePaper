@@ -1,0 +1,67 @@
+\documentclass[preprint]{aastex}
+
+\begin{document}
+
+\title{Validating Galfast Star Counts}
+
+\section{Comparing VVV Data to Galfast and Besancon Models}
+Our original aim was to compare the bulge data from the ESO Vista Variables in the Via L\'{a}ctea (VVV) \citep{saito} to Galfast output and use Besan\c{c}on \citep{robin03} and Trilegal \citep{trilegal} output as a further check on both since \citet{saito} also used it as a comparison. Therefore, the first step was to gather data in a 1 sq. degree region centered at galactic coordinates (l,b) = (0.0, -9.5). The VVV data is in VISTA JHK$_{s}$ colors, but in \citet{saito} they indicate that the JHK system provided by Besan\c{c}on output is close enough for comparison purposes. To convert SDSS magnitude output from Galfast to JHK, we used the conversions provided in equation 1 and table 2 of \citet{covey}. Furthermore, to account for A$_{K_{s}}$ and E(J-$_{K_{s}}$ ) we followed the same procedure as \citet{saito} using the reddening maps of \citet{gonz} along with the extinction law of \citet{card}. In the case of the Trilegal data, there is only the option of obtaining circular pointings in simulations rather than the rectangular options available in Galfast and Besan\c{c}on. Furthermore, the output of Trilegal lacks position information beyond distance modulus so in order to match the Trilegal output processing to the other models we took a 1 sq. deg. region centered at (l,b) = (0.0, -9.5) like the rest and then randomly assigned the output to one of the 16 smaller areas with equal weight before adding in the extinction to each of the areas. 
+
+The results of this comparison are shown in Figure 1. Galfast counts seem to be consistently at half the amount of the VVV survey and the corresponding Besan\c{c}on counts, but seem to be comparable to Trilegal numbers. Figures 2-4 further break down the Thin Disk, Thick Disk, and Bulge counts of the three models. The relationship shown by Galfast to the other models in Figure 1 is fairly consistent across the thin disk up to about K magnitude 16.5. In Figures 3 \& 4 Galfast seems to underestimate the Besan\c{c}on counts consistently and they seem to follow very similar curves. However, comparisons to Trilegal are inconsistent as this model underestimates Thick disc counts compared to the other two models while falling in between Besan\c{c}on and Galfast in Bulge Counts. Trilegal bulge counts also feature a sharper leveling off at fainter magnitudes than the other models.
+
+In order to make sure that the conversions to J \& K magnitudes were not a source of the discrepancy between Galfast and the higher VVV and Besan\c{c}on counts we decided to check the conversions. We converted V,R,I magnitudes out of Besan\c{c}on to SDSS g-i values using the transformations from Table 3 in \citet{jordi} and then applied the conversions used above from \citet{covey} to get converted K magnitudes. We then compared these to the K magnitudes out of Besan\c{c}on for the same catalog and the results are shown in Figure 5. Based upon the results of this comparison we decided that our conversions gave reasonable results and that the underestimation in the plot is actually present.
+
+\section{Comparing Galfast to Besancon and Trilegal models in Galactic Bulge Region}
+
+
+
+\section{Comparing Galfast and other models to the SDSS Stripe 82 Data}
+
+\begin{thebibliography}{}
+\bibitem[Cardelli et al.(1989)]{card} Cardelli, J. A., Clayton, G. C., \& Mathis, J. S. 1989, \apj, 345, 245
+\bibitem[Covey et al.(2007)]{covey} Covey, K.R., Ivezi\'{c}, \v{Z}, Schlegel, D., et al. 2007, \aj, 134, 2398
+\bibitem[Girardi et al.(2005)]{trilegal} Girardi, L., Groenewegen, M. A. T., Hatziminaoglou, E., \& da Costa, L. 2005, \aap, 436, 895
+\bibitem[Gonzalez et al.(2012)]{gonz} Gonzalez, O. A., Rejkuba, M., Zoccali, M., et al. 2012, \aap, 543, A13
+\bibitem[Jordi et al.(2006)]{jordi} Jordi, K., Grebel, E. K., \& Ammon, K. 2006, \aap, 460, 339
+\bibitem[Robin et al.(2003)]{robin03} Robin, A. C., Reylé, C., Derrière, \& S., Picaud, S. 2003, \aap, 409, 523
+\bibitem[Saito et al.(2012)]{saito} Saito, R.K., Minniti, D., Dias, B., et al. 2012, \aap, 544, A147
+\end{thebibliography}
+
+
+
+\begin{figure}
+\plotone{plots/vvvModelsLumFunc.png}
+\caption{Comparing VVV Data to model catalogs from Galfast, Besan\c{c}on and Trilegal in the bulge region.\label{fig1}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/thinCounts.png}
+\caption{Breaking the results of Fig. 1 into thin disc components.\label{fig2}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/thickCounts.png}
+\caption{Breaking the results of Fig. 1 into thick disc components.\label{fig3}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/bulgeCounts.png}
+\caption{Breaking the results of Fig. 1 into bulge components.\label{fig4}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/conversionsRatio.png}
+\caption{Comparing K magnitudes from Besan\c{c}on output to K magnitudes calculated from Besan\c{c}on V,R,I magnitudes.\label{fig5}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/lumFunc.png}
+\caption{A breakdown of counts from Galfast output in V magnitude for same area on sky as Part 1.\label{fig6}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/besLumFunc.png}
+\caption{A similar plot as the previous figure for the Besan\c{c}on output.\label{fig7}}
+\end{figure}
+
+\end{document}
