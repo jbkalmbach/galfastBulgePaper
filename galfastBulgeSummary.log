@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  3 NOV 2014 13:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 NOV 2014 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -194,6 +194,20 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 AAS preprint substyle, v5.2 <12 Dec 2003>.
+
+Package natbib Warning: Citation `saito' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `robin03' on page 1 undefined on input line 8.
+
+
+
+Package natbib Warning: Citation `trilegal' on page 1 undefined on input line 8
+.
+
+
+Package natbib Warning: Citation `saito' on page 1 undefined on input line 8.
+
 LaTeX Font Info:    Try loading font information for U+lasy on input line 8.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -207,7 +221,33 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+
+Package natbib Warning: Citation `saito' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `covey' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `saito' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `gonz' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `card' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `jordi' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `covey' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `lupton' on page 1 undefined on input line 16.
+
+
+[1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no é in font cmr10!
@@ -218,78 +258,102 @@ Plotone included the file plots/vvvModelsLumFunc.png
 File: plots/vvvModelsLumFunc.png Graphic file (type png)
 
 <use plots/vvvModelsLumFunc.png>
-Package pdftex.def Info: plots/vvvModelsLumFunc.png used on input line 33.
+Package pdftex.def Info: plots/vvvModelsLumFunc.png used on input line 38.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
-
+ [2]
 Plotone included the file plots/thinCounts.png
-<plots/thinCounts.png, id=13, 578.16pt x 433.62pt>
+<plots/thinCounts.png, id=17, 578.16pt x 433.62pt>
 File: plots/thinCounts.png Graphic file (type png)
  <use plots/thinCounts.png>
-Package pdftex.def Info: plots/thinCounts.png used on input line 38.
+Package pdftex.def Info: plots/thinCounts.png used on input line 43.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
 Plotone included the file plots/thickCounts.png
-<plots/thickCounts.png, id=14, 578.16pt x 433.62pt>
+<plots/thickCounts.png, id=18, 578.16pt x 433.62pt>
 File: plots/thickCounts.png Graphic file (type png)
 
 <use plots/thickCounts.png>
-Package pdftex.def Info: plots/thickCounts.png used on input line 43.
+Package pdftex.def Info: plots/thickCounts.png used on input line 48.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
 Plotone included the file plots/bulgeCounts.png
-<plots/bulgeCounts.png, id=15, 578.16pt x 433.62pt>
+<plots/bulgeCounts.png, id=19, 578.16pt x 433.62pt>
 File: plots/bulgeCounts.png Graphic file (type png)
 
 <use plots/bulgeCounts.png>
-Package pdftex.def Info: plots/bulgeCounts.png used on input line 48.
+Package pdftex.def Info: plots/bulgeCounts.png used on input line 53.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
 Plotone included the file plots/conversionsRatio.png
-<plots/conversionsRatio.png, id=16, 578.16pt x 433.62pt>
+<plots/conversionsRatio.png, id=20, 578.16pt x 433.62pt>
 File: plots/conversionsRatio.png Graphic file (type png)
 
 <use plots/conversionsRatio.png>
-Package pdftex.def Info: plots/conversionsRatio.png used on input line 53.
+Package pdftex.def Info: plots/conversionsRatio.png used on input line 58.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
-Plotone included the file plots/lumFunc.png
-<plots/lumFunc.png, id=17, 578.16pt x 433.62pt>
-File: plots/lumFunc.png Graphic file (type png)
- <use plots/lumFunc.png>
-Package pdftex.def Info: plots/lumFunc.png used on input line 58.
+Plotone included the file plots/galfastVCounts.png
+<plots/galfastVCounts.png, id=21, 578.16pt x 433.62pt>
+File: plots/galfastVCounts.png Graphic file (type png)
+
+<use plots/galfastVCounts.png>
+Package pdftex.def Info: plots/galfastVCounts.png used on input line 63.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
-Plotone included the file plots/besLumFunc.png
-<plots/besLumFunc.png, id=18, 578.16pt x 433.62pt>
-File: plots/besLumFunc.png Graphic file (type png)
- <use plots/besLumFunc.png>
-Package pdftex.def Info: plots/besLumFunc.png used on input line 63.
+Plotone included the file plots/besanconVCounts.png
+<plots/besanconVCounts.png, id=22, 578.16pt x 433.62pt>
+File: plots/besanconVCounts.png Graphic file (type png)
+
+<use plots/besanconVCounts.png>
+Package pdftex.def Info: plots/besanconVCounts.png used on input line 68.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
-[2] [3 <./plots/vvvModelsLumFunc.png>] [4 <./plots/thinCounts.png>] [5 <./plots
-/thickCounts.png>] [6 <./plots/bulgeCounts.png>] [7 <./plots/conversionsRatio.p
-ng>] [8 <./plots/lumFunc.png>] [9 <./plots/besLumFunc.png>]
-(./galfastBulgeSummary.aux) ) 
+Plotone included the file plots/trilegalVCounts.png
+<plots/trilegalVCounts.png, id=23, 578.16pt x 433.62pt>
+File: plots/trilegalVCounts.png Graphic file (type png)
+
+<use plots/trilegalVCounts.png>
+Package pdftex.def Info: plots/trilegalVCounts.png used on input line 73.
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
+
+
+Package natbib Warning: There were undefined citations.
+
+[3
+
+] [4 <./plots/vvvModelsLumFunc.png>] [5 <./plots/thinCounts.png>] [6 <./plots/t
+hickCounts.png>] [7 <./plots/bulgeCounts.png>] [8 <./plots/conversionsRatio.png
+>] [9 <./plots/galfastVCounts.png>] [10 <./plots/besanconVCounts.png>]
+[11 <./plots/trilegalVCounts.png>] (./galfastBulgeSummary.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2787 strings out of 493315
- 36775 string characters out of 6137904
- 96987 words of memory out of 5000000
- 6196 multiletter control sequences out of 15000+600000
+ 2796 strings out of 493315
+ 37021 string characters out of 6137904
+ 96706 words of memory out of 5000000
+ 6204 multiletter control sequences out of 15000+600000
  11921 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,7n,28p,1628b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr9.pfb>
-Output written on galfastBulgeSummary.pdf (9 pages, 497720 bytes).
+ 38i,7n,28p,1628b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on galfastBulgeSummary.pdf (11 pages, 564164 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

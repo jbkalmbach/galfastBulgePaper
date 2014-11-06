@@ -13,7 +13,11 @@ In order to make sure that the conversions to J \& K magnitudes were not a sourc
 
 \section{Comparing Galfast to Besancon and Trilegal models in Galactic Bulge Region}
 
+Our next goal was to learn more about the differences in the models from each other in the 1 square degree bulge region centered at (l,b) = (0, -9.5) by looking at optical wavelengths. We chose to look at V-Band magnitudes since it was an output available directly from Besan\c{c}on and Trilegal. We needed to perform more conversions to get Galfast output in the same band. We used the \citet{lupton} equations to convert SDSS magnitudes to the V-Band.
 
+Comparing Galfast to Besan\c{c}on (see Figures 6 \& 7) we see that total Galfast counts are comparable to the Besan\c{c}on in the V-Band with Galfast slightly lower at brighter magnitudes and higher at fainter magnitudes. When we look at the breakdown of the parts of each model the biggest difference is the contribution of the thick and thin discs between the models. In Galfast, the proportion between the two is fairly equal, but in the Besan\c{c}on model at magnitudes fainter than V = 17 the thick disc count rapidly begins to grow much larger than the thin disc. The bulge and halo counts between the two seem to match well except for the large population of bright bulge stars of V $<$ 16 in Besan\c{c}on.
+
+The breakdown of the Trilegal output into model components shows a very similar bulge count to Besan\c{c}on and similar overall numbers to Galfast. Trilegal has a more similar thin and thick disc distribution to Galfast, but has a significantly smaller thick disc contribution at brighter magnitudes. The biggest difference between Trilegal and the other models is the large contribution from halo stars in this region. Both Galfast and Besan\c{c}on had less than 5\% of total stars marked as halo stars, but Trilegal has over 20\%.
 
 \section{Comparing Galfast and other models to the SDSS Stripe 82 Data}
 
@@ -23,6 +27,7 @@ In order to make sure that the conversions to J \& K magnitudes were not a sourc
 \bibitem[Girardi et al.(2005)]{trilegal} Girardi, L., Groenewegen, M. A. T., Hatziminaoglou, E., \& da Costa, L. 2005, \aap, 436, 895
 \bibitem[Gonzalez et al.(2012)]{gonz} Gonzalez, O. A., Rejkuba, M., Zoccali, M., et al. 2012, \aap, 543, A13
 \bibitem[Jordi et al.(2006)]{jordi} Jordi, K., Grebel, E. K., \& Ammon, K. 2006, \aap, 460, 339
+\bibitem[Lupton(2005)]{lupton} Lupton, R. 2005, https://www.sdss3.org/dr8/algorithms/sdssUBVRITransform.php
 \bibitem[Robin et al.(2003)]{robin03} Robin, A. C., Reylé, C., Derrière, \& S., Picaud, S. 2003, \aap, 409, 523
 \bibitem[Saito et al.(2012)]{saito} Saito, R.K., Minniti, D., Dias, B., et al. 2012, \aap, 544, A147
 \end{thebibliography}
@@ -55,13 +60,18 @@ In order to make sure that the conversions to J \& K magnitudes were not a sourc
 \end{figure}
 
 \begin{figure}
-\plotone{plots/lumFunc.png}
+\plotone{plots/galfastVCounts.png}
 \caption{A breakdown of counts from Galfast output in V magnitude for same area on sky as Part 1.\label{fig6}}
 \end{figure}
 
 \begin{figure}
-\plotone{plots/besLumFunc.png}
+\plotone{plots/besanconVCounts.png}
 \caption{A similar plot as the previous figure for the Besan\c{c}on output.\label{fig7}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/trilegalVCounts.png}
+\caption{A similar plot as the previous figure for the Trilegal output.\label{fig8}}
 \end{figure}
 
 \end{document}
