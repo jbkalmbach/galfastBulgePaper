@@ -1,11 +1,12 @@
 \documentclass[preprint]{aastex}
+\usepackage{gensymb}
 
 \begin{document}
 
 \title{Validating Galfast Star Counts}
 
 \section{Comparing VVV Data to Galfast and Besancon Models}
-Our original aim was to compare the bulge data from the ESO Vista Variables in the Via L\'{a}ctea (VVV) \citep{saito} to Galfast output and use Besan\c{c}on \citep{robin03} and Trilegal \citep{trilegal} output as a further check on both since \citet{saito} also used it as a comparison. Therefore, the first step was to gather data in a 1 sq. degree region centered at galactic coordinates (l,b) = (0.0, -9.5). The VVV data is in VISTA JHK$_{s}$ colors, but in \citet{saito} they indicate that the JHK system provided by Besan\c{c}on output is close enough for comparison purposes. To convert SDSS magnitude output from Galfast to JHK, we used the conversions provided in equation 1 and table 2 of \citet{covey}. Furthermore, to account for A$_{K_{s}}$ and E(J-$_{K_{s}}$ ) we followed the same procedure as \citet{saito} using the reddening maps of \citet{gonz} along with the extinction law of \citet{card}. In the case of the Trilegal data, there is only the option of obtaining circular pointings in simulations rather than the rectangular options available in Galfast and Besan\c{c}on. Furthermore, the output of Trilegal lacks position information beyond distance modulus so in order to match the Trilegal output processing to the other models we took a 1 sq. deg. region centered at (l,b) = (0.0, -9.5) like the rest and then randomly assigned the output to one of the 16 smaller areas with equal weight before adding in the extinction to each of the areas. 
+Our original aim was to compare the bulge data from the ESO Vista Variables in the Via L\'{a}ctea (VVV) \citep{saito} to Galfast output and use Besan\c{c}on \citep{robin03} and Trilegal \citep{trilegal} output as a further check on both since \citet{saito} also used it as a comparison. Therefore, the first step was to gather data in a 1 sq. degree region centered at galactic coordinates (l,b) = (0.0, -9.5). The VVV data is in VISTA JHK$_{s}$ colors, but in \citet{saito} they indicate that the JHK system provided by Besan\c{c}on output is close enough for comparison purposes. To convert SDSS magnitude output from Galfast to JHK, we used the conversions provided in equation 1 and table 2 of \citet{covey}. Furthermore, to account for A$_K{_{s}}$ and E(J-K$_s$) we followed the same procedure as \citet{saito} using the reddening maps of \citet{gonz} along with the extinction law of \citet{card}. In the case of the Trilegal data, there is only the option of obtaining circular pointings in simulations rather than the rectangular options available in Galfast and Besan\c{c}on. Furthermore, the output of Trilegal lacks position information beyond distance modulus so in order to match the Trilegal output processing to the other models we took a 1 sq. deg. region centered at (l,b) = (0.0, -9.5) like the rest and then randomly assigned the output to one of the 16 smaller areas with equal weight before adding in the extinction to each of the areas. 
 
 The results of this comparison are shown in Figure 1. Galfast counts seem to be consistently at half the amount of the VVV survey and the corresponding Besan\c{c}on counts, but seem to be comparable to Trilegal numbers. Figures 2-4 further break down the Thin Disk, Thick Disk, and Bulge counts of the three models. The relationship shown by Galfast to the other models in Figure 1 is fairly consistent across the thin disk up to about K magnitude 16.5. In Figures 3 \& 4 Galfast seems to underestimate the Besan\c{c}on counts consistently and they seem to follow very similar curves. However, comparisons to Trilegal are inconsistent as this model underestimates Thick disc counts compared to the other two models while falling in between Besan\c{c}on and Galfast in Bulge Counts. Trilegal bulge counts also feature a sharper leveling off at fainter magnitudes than the other models.
 
@@ -21,15 +22,20 @@ The breakdown of the Trilegal output into model components shows a very similar 
 
 \section{Comparing Galfast and other models to the SDSS Stripe 82 Data}
 
+Finally we decided to compare each of the models to another dataset. We chose to use the SDSS Stripe 82 Data and compare in 10 degree segments of RA and spanning the full -1.25 $<$ Dec $<$ 1.25 range of the Stripe 82 region. This way we were able to plot counts for the Stripe 82 data in g-i vs. r that are comparable to Figure 23 in \citet{sesar}. Next we divided these counts by those from each of the models based upon output from the same region. Difficulties arose once again in defining the region to the Trilegal model, but we used circular regions with a radius $\approx$ $0.63\degree$ and located at approximately Dec = $\pm$ $0.63\degree$ and centered 1 diameter apart in RA. We also had to convert Besan\c{c}on magnitudes to SDSS magnitudes with the \citet{jordi} equations.
+
+Results are shown in figures 9-14 with the color range defining the log[counts] in each bin. The scale factor was a value that we multiplied with the model counts to give us a more accurate match to the total numbers in the model output and the data. The scale factor was calculated by finding the median Stripe 82/Model count for the region defined by 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05. This region was chosen in order to get a good representation of thin and thick disc stars and a good number of counts from both models and data. The white spots on the plots are areas where either the data or the model did not have a count greater than 5. There also appear to be issues with the Besan\c{c}on g-i results, but this could be due to the binning effects brought about by the lower number of model stars in the region compared to data and the other two models. In order to understand the problem better and make sure there wasn't something in the conversion to g-i that was causing a binning error we decided to look at V-I which is the UBVRI color used to convert to g-i in the \citet{jordi} equations. Figure 15 shows the distributions of V-I in the same region used in figure 9. There is nothing to suggest anything obviously causing the errors in this plot, so we then looked at a comparison of the g-i values after the conversion of Besan\c{c}on magnitudes to the g-i values of galfast in the same region in figure 16. Here we see that the galfast results present a continuous distribution throughout the values g-i $>$ 0.3 while the Besan\c{c}on values do not and it seems to be a direct result of the V-I distribution within Besan\c{c}on.
+
 \begin{thebibliography}{}
 \bibitem[Cardelli et al.(1989)]{card} Cardelli, J. A., Clayton, G. C., \& Mathis, J. S. 1989, \apj, 345, 245
-\bibitem[Covey et al.(2007)]{covey} Covey, K.R., Ivezi\'{c}, \v{Z}, Schlegel, D., et al. 2007, \aj, 134, 2398
+\bibitem[Covey et al.(2007)]{covey} Covey, K.R., Ivezi\'{c}, \v{Z}., Schlegel, D., et al. 2007, \aj, 134, 2398
 \bibitem[Girardi et al.(2005)]{trilegal} Girardi, L., Groenewegen, M. A. T., Hatziminaoglou, E., \& da Costa, L. 2005, \aap, 436, 895
 \bibitem[Gonzalez et al.(2012)]{gonz} Gonzalez, O. A., Rejkuba, M., Zoccali, M., et al. 2012, \aap, 543, A13
 \bibitem[Jordi et al.(2006)]{jordi} Jordi, K., Grebel, E. K., \& Ammon, K. 2006, \aap, 460, 339
 \bibitem[Lupton(2005)]{lupton} Lupton, R. 2005, https://www.sdss3.org/dr8/algorithms/sdssUBVRITransform.php
 \bibitem[Robin et al.(2003)]{robin03} Robin, A. C., Reylé, C., Derrière, \& S., Picaud, S. 2003, \aap, 409, 523
 \bibitem[Saito et al.(2012)]{saito} Saito, R.K., Minniti, D., Dias, B., et al. 2012, \aap, 544, A147
+\bibitem[Sesar et al.(2010)]{sesar} Sesar, B., Ivezi\'{c}, \v{Z}., Grammer, S.H., et al. 2010, \apj, 708, 717
 \end{thebibliography}
 
 
@@ -74,4 +80,43 @@ The breakdown of the Trilegal output into model components shows a very similar 
 \caption{A similar plot as the previous figure for the Trilegal output.\label{fig8}}
 \end{figure}
 
+\begin{figure}
+\plotone{plots/stripe82/310.png}
+\caption{A plot comparing the log[counts] of the various models to those of the SDSS Stripe 82 data in the region with 310 $<$ RA $<$ 320. Scale Factor refers to the constant by which the models counts were multiplied to give a median Stripe 82/Model count value of 1.0 in the region 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05.\label{fig9}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/stripe82/330.png}
+\caption{A plot comparing the log[counts] of the various models to those of the SDSS Stripe 82 data in the region with 330 $<$ RA $<$ 340. Scale Factor refers to the constant by which the models counts were multiplied to give a median Stripe 82/Model count value of 1.0 in the region 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05.\label{fig10}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/stripe82/350.png}
+\caption{A plot comparing the log[counts] of the various models to those of the SDSS Stripe 82 data in the region with 350 $<$ RA $<$ 360. Scale Factor refers to the constant by which the models counts were multiplied to give a median Stripe 82/Model count value of 1.0 in the region 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05.\label{fig11}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/stripe82/010.png}
+\caption{A plot comparing the log[counts] of the various models to those of the SDSS Stripe 82 data in the region with 10 $<$ RA $<$ 20. Scale Factor refers to the constant by which the models counts were multiplied to give a median Stripe 82/Model count value of 1.0 in the region 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05.\label{fig12}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/stripe82/030.png}
+\caption{A plot comparing the log[counts] of the various models to those of the SDSS Stripe 82 data in the region with 30 $<$ RA $<$ 40. Scale Factor refers to the constant by which the models counts were multiplied to give a median Stripe 82/Model count value of 1.0 in the region 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05.\label{fig13}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/stripe82/050.png}
+\caption{A plot comparing the log[counts] of the various models to those of the SDSS Stripe 82 data in the region with 50 $<$ RA $<$ 60. Scale Factor refers to the constant by which the models counts were multiplied to give a median Stripe 82/Model count value of 1.0 in the region 0.4 $<$ g-i $<$ 1.0 and 15 $<$ r $<$ 18.05.\label{fig14}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/besVMI.png}
+\caption{V-I for Besan\c{c}on model in region plotted in figure 9.\label{fig15}}
+\end{figure}
+
+\begin{figure}
+\plotone{plots/galBesGMI.png}
+\caption{Comparing g-i for Besan\c{c}on and Galfast models in region plotted in figure 9.\label{fig16}}
+\end{figure}
 \end{document}
